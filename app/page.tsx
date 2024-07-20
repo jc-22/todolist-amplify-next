@@ -37,7 +37,7 @@ export default function App() {
   }
 
   return (
-    <Authenticator>
+    <Authenticator socialProviders={["google"]}>
       {({signOut, user}) => (
         <main>
           <h1>Todos from: {user?.signInDetails?.loginId}</h1>
